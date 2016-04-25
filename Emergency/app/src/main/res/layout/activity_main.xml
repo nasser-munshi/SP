@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/background_blue">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/service_start"
+        android:layout_centerInParent="true"
+        android:onClick="onServiceStartButtonClick"
+        android:id="@+id/service_start" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/service_stop"
+        android:layout_centerInParent="true"
+        android:onClick="onServiceStopButtonClick"
+        android:layout_below="@+id/service_start"
+        android:id="@+id/service_stop" />
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/send_button"
+       android:onClick="onSendButtonClick"
+        android:layout_below="@+id/addressEditText"
+       android:id="@+id/button" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/logoImage" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImage"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/police_banner"
+        android:id="@+id/bannerImage"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/test_server_address_base"
+        android:id="@+id/addressEditText"
+        android:layout_below="@+id/bannerImage"/>
+
+
+</RelativeLayout>

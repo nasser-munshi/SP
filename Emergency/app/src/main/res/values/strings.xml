@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Self Protect</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="service_start">Service START</string>
+    <string name="service_stop">Service STOP</string>
+    <string name="send_button">SEND</string>
+    <string name="test_server_address_base">http://www.convergencebd.com</string>
+    <string name="server_address">/policeci/index.php/VictimController/insert</string>
+</resources>
